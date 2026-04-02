@@ -33,12 +33,12 @@ void input()
 
 void mergeSort(int low, int high)
 {
-    if (low >= high)
+    if (low >= high) 
         return; 
 
-    int mid = (low + high) / 2;
+    int mid = (low + high) / 2; 
 
-    mergeSort(low, mid);
+    mergeSort(low, mid); 
     mergeSort(mid + 1, high);
 
     int i = low; 
@@ -90,3 +90,12 @@ void output()
     cout << endl;
 }
 
+int main()
+{
+    input();
+    if (n > 0) {
+        mergeSort(0, n - 1);
+        output();
+    }
+    return 0;
+}
